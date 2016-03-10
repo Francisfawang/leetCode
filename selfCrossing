@@ -1,1 +1,49 @@
+package CBFW615;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+/**
+ * Created by fwang002c on 3/7/2016.
+ */
+public class C37 {
+
+    C37(){
+        currentNode = new Node(0,0);
+        traces = new LinkedList<>();
+    }
+
+    class Node{
+        int x;
+        int y;
+        public Node(int x, int y){
+            this.x = x;
+            this.y = y;
+        }
+    }
+
+    class Line{
+        Node start;
+        Node end;
+        public Line(int x1, int y1, int x2, int y2){
+            start = new Node(x1,y1);
+            end = new Node(x2,y2);
+        }
+    }
+
+    private Node currentNode;
+    private Queue<Line> traces;
+
+    public boolean isCrossed(int[] a){
+        try {
+            for (int i: a){
+                if (traces.size()<3)
+            }
+        } catch (Exception e){
+            return false;
+        }
+    }
+
+
+}
 
